@@ -1,0 +1,63 @@
+<style type="text/css">
+    #Logo{
+    width:80%; 
+    display:block; 
+    margin:0 auto; 
+    margin-bottom: 3%;
+    }
+    
+   .navbar-bottom {
+   min-height: 300px;
+   margin-top: 100px;
+   /*background-color: #28364f;*/ /*controls the footer color*/
+   background-color: #4795e1;
+   padding-top: 35px;
+   color:#FFFFFF;
+
+   margin-top:0%;
+
+	
+
+}
+
+@media (min-width: 992px) {
+  .navbar-bottom {
+
+    margin-top:5%;            /*change when navbar added*/
+    
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .navbar-bottom	 {
+   margin-top:15%;         Move the footer down on larger screens*/
+  }
+}
+
+
+
+/*===========================================================================*/
+
+@media (orientation: portrait) {
+  .navbar-bottom	 {
+  position:absolute;
+  width:100%;
+  bottom:0;
+  left:0;
+   margin-top:45%;         Move the footer down on larger screens*/
+  }
+}
+
+
+
+
+    
+    
+    
+
+
+</style>
+
+
+

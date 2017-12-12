@@ -1,0 +1,1981 @@
+<points_of_interest>
+	<poi>
+		<file><![CDATA[./android/support/v4/util/AtomicFile.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[79]]></line_number>
+		<match><![CDATA[new FileInputStream]]></match>
+		<name><![CDATA[new FileInputStream]]></name>
+		<snippet><![CDATA[79:      return new FileInputStream(this.mBaseName);
+80-   }]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/FileLib.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[95]]></line_number>
+		<match><![CDATA[new FileInputStream]]></match>
+		<name><![CDATA[new FileInputStream]]></name>
+		<snippet><![CDATA[94-      if(var1 == FileLib.EFileMode.FILE_MODE_READ) {
+95:         var2 = (new FileInputStream(var0)).getChannel();
+96-      } else {]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/android/gms/drive/Contents.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[60]]></line_number>
+		<match><![CDATA[new FileInputStream]]></match>
+		<name><![CDATA[new FileInputStream]]></name>
+		<snippet><![CDATA[59-         this.qH = true;
+60:         return new FileInputStream(this.om.getFileDescriptor());
+61-      }]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/util/AtomicFile.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[98]]></line_number>
+		<match><![CDATA[new FileOutputStream]]></match>
+		<name><![CDATA[new FileOutputStream]]></name>
+		<snippet><![CDATA[98:         FileOutputStream var1 = new FileOutputStream(this.mBaseName);
+99-         return var1;]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/util/AtomicFile.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[105]]></line_number>
+		<match><![CDATA[new FileOutputStream]]></match>
+		<name><![CDATA[new FileOutputStream]]></name>
+		<snippet><![CDATA[104-            try {
+105:               FileOutputStream var3 = new FileOutputStream(this.mBaseName);
+106-               return var3;]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/NativeAppCallAttachmentStore.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[65]]></line_number>
+		<match><![CDATA[new FileOutputStream]]></match>
+		<name><![CDATA[new FileOutputStream]]></name>
+		<snippet><![CDATA[64-         public void processAttachment(Bitmap var1, File var2) throws IOException {
+65:            FileOutputStream var3 = new FileOutputStream(var2);
+66-]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/SoundManager.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[58]]></line_number>
+		<match><![CDATA[new FileOutputStream]]></match>
+		<name><![CDATA[new FileOutputStream]]></name>
+		<snippet><![CDATA[57-         if(var3.createNewFile()) {
+58:            FileOutputStream var9 = new FileOutputStream(var3);
+59-            var9.write(var8);]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/FileLib.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[104]]></line_number>
+		<match><![CDATA[new FileOutputStream]]></match>
+		<name><![CDATA[new FileOutputStream]]></name>
+		<snippet><![CDATA[103-      } else {
+104:         var3 = new FileOutputStream(var0);
+105-      }]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/android/gms/drive/Contents.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[77]]></line_number>
+		<match><![CDATA[new FileOutputStream]]></match>
+		<name><![CDATA[new FileOutputStream]]></name>
+		<snippet><![CDATA[76-         this.qI = true;
+77:         return new FileOutputStream(this.om.getFileDescriptor());
+78-      }]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/util/AtomicFile.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[18]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[18:      this.mBackupName = new File(var1.getPath() + ".bak");
+19-   }]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/util/AtomicFile.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[79]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[78-
+79:      return new FileInputStream(this.mBaseName);
+80-   }]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/util/AtomicFile.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[98]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[97-      try {
+98:         FileOutputStream var1 = new FileOutputStream(this.mBaseName);
+99-         return var1;]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/util/AtomicFile.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[105]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[104-            try {
+105:               FileOutputStream var3 = new FileOutputStream(this.mBaseName);
+106-               return var3;]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/FileProvider.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[29]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[28-   private static final String[] COLUMNS = new String[]{"_display_name", "_size"};
+29:   private static final File DEVICE_ROOT = new File("/");
+30-   private static final String META_DATA_FILE_PROVIDER_PATHS = "android.support.FILE_PROVIDER_PATHS";]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/FileProvider.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[48]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[47-         if(var5 != null) {
+48:            var6 = new File(var4, var5);
+49-         } else {]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/FileProvider.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[98]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[97-   private static FileProvider.PathStrategy parsePathStrategy(Context var0, String var1) throws IOException, XmlPullParserException {
+98:      FileProvider.SimplePathStrategy var2 = new FileProvider.SimplePathStrategy(var1);
+99-      XmlResourceParser var3 = var0.getPackageManager().resolveContentProvider(var1, 128).loadXmlMetaData(var0.getPackageManager(), "android.support.FILE_PROVIDER_PATHS");]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/FileProvider.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[260]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[259-         } else {
+260:            File var7 = new File(var6, var5);
+261-]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/NativeAppCallContentProvider.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[54]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[53-      if(var3 == null) {
+54:         throw new FileNotFoundException();
+55-      } else {]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/NativeAppCallAttachmentStore.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[35]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[34-         if(attachmentsDirectory == null) {
+35:            attachmentsDirectory = new File(var0.getCacheDir(), "com.facebook.NativeAppCallAttachmentStore.files");
+36-         }]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/NativeAppCallAttachmentStore.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[65]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[64-         public void processAttachment(Bitmap var1, File var2) throws IOException {
+65:            FileOutputStream var3 = new FileOutputStream(var2);
+66-]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/NativeAppCallAttachmentStore.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[97]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[96-         try {
+97:            File var5 = new File(var4, URLEncoder.encode(var2, "UTF-8"));
+98-            return var5;]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/NativeAppCallAttachmentStore.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[110]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[109-      } else {
+110:         var3 = new File(attachmentsDirectory, var1.toString());
+111-         if(var2 && !var3.exists()) {]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/NativeAppCallAttachmentStore.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[126]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[125-         } catch (IOException var5) {
+126:            throw new FileNotFoundException();
+127-         }
+128-      } else {
+129:         throw new FileNotFoundException();
+130-      }]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/internal/ImageResponseCache.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[36]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[35-         if(imageCache == null) {
+36:            imageCache = new FileLruCache(var0.getApplicationContext(), TAG, new FileLruCache.Limits());
+37-         }]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/internal/UrlRedirectCache.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[50]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[49-         if(urlRedirectCache == null) {
+50:            urlRedirectCache = new FileLruCache(var0.getApplicationContext(), TAG, new FileLruCache.Limits());
+51-         }]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Response.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[156]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[155-         if(var0 != null) {
+156:            responseCache = new FileLruCache(var0, "ResponseCache", new FileLruCache.Limits());
+157-         }]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/SoundManager.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[50]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[49-   public int loadSound(byte[] var1, int var2) {
+50:      File var3 = new File(this.mContext.getCacheDir(), "tempsound.wav");
+51-      if(var3.exists()) {]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/SoundManager.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[58]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[57-         if(var3.createNewFile()) {
+58:            FileOutputStream var9 = new FileOutputStream(var3);
+59-            var9.write(var8);]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/UncaughtExceptionWriter.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[16]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[15-   public UncaughtExceptionWriter(Context var1) {
+16:      this.mCrashReportPath = (new FileSystem(var1)).getHomeDirectory() + "crashreport.txt";
+17-      this.mPreviousHandler = Thread.getDefaultUncaughtExceptionHandler();]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/FileLib.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[18]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[17-   public static final String TAG = "GameLibFile";
+18:   public static FileLib.ExpansionFile[] mExpansionFiles = new FileLib.ExpansionFile[0];
+19-   private static HashMap mFileHandles = new HashMap();]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/FileLib.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[83]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[82-
+83:      return new File(var1);
+84-   }]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/FileLib.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[95]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[94-      if(var1 == FileLib.EFileMode.FILE_MODE_READ) {
+95:         var2 = (new FileInputStream(var0)).getChannel();
+96-      } else {]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/FileLib.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[104]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[103-      } else {
+104:         var3 = new FileOutputStream(var0);
+105-      }
+106-
+107:      mFileHandles.put(Integer.valueOf(mNextFileHandleId), new FileHandle(var0, var2, var3));
+108-      int var5 = toHandle(mNextFileHandleId);]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/FileLib.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[132]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[131-      static {
+132:         FileLib.EFileMode[] var0 = new FileLib.EFileMode[]{FILE_MODE_READ, FILE_MODE_WRITE_APPEND, FILE_MODE_CREATE_WRITE};
+133-         $VALUES = var0;]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/FileLib.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[153]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[152-         String var1 = GameLib.mContext.getPackageName();
+153:         File var2 = new File(Environment.getExternalStorageDirectory().toString() + "/Android/obb/" + var1);
+154-         StringBuilder var3 = (new StringBuilder()).append(var2).append(File.separator);]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/android/gms/drive/Contents.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[60]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[59-         this.qH = true;
+60:         return new FileInputStream(this.om.getFileDescriptor());
+61-      }]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/android/gms/drive/Contents.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[77]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[76-         this.qI = true;
+77:         return new FileOutputStream(this.om.getFileDescriptor());
+78-      }]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/android/gms/internal/cp.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[14]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[13-   public static void a(Context var0, WebSettings var1) {
+14:      var1.setAppCachePath((new File(var0.getCacheDir(), "com.google.android.gms.ads.appcache")).getAbsolutePath());
+15-      var1.setAppCacheMaxSize(0L);]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/android/gms/internal/cz.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[40]]></line_number>
+		<match><![CDATA[new File]]></match>
+		<name><![CDATA[new File]]></name>
+		<snippet><![CDATA[39-      try {
+40:         if(!"mraid.js".equalsIgnoreCase((new File(var2)).getName())) {
+41-            return super.shouldInterceptRequest(var1, var2);]]></snippet>
+		<group><![CDATA[file_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/app/FragmentManager.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[26]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[26:   public abstract boolean executePendingTransactions();
+27-]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/app/FragmentPagerAdapter.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[40]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[39-         this.mCurTransaction = null;
+40:         this.mFragmentManager.executePendingTransactions();
+41-      }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/app/FragmentStatePagerAdapter.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[49]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[48-         this.mCurTransaction = null;
+49:         this.mFragmentManager.executePendingTransactions();
+50-      }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/app/FragmentManagerImpl.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[482]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[481-
+482:   public boolean executePendingTransactions() {
+483-      return this.execPendingActions();]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/app/FragmentManagerImpl.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[1050]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[1049-      this.checkStateLoss();
+1050:      this.executePendingTransactions();
+1051-      return this.popBackStackState(this.mActivity.mHandler, (String)null, -1, 0);]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/app/FragmentManagerImpl.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[1056]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[1055-      this.checkStateLoss();
+1056:      this.executePendingTransactions();
+1057-      if(var1 < 0) {]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/app/FragmentManagerImpl.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[1066]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[1065-      this.checkStateLoss();
+1066:      this.executePendingTransactions();
+1067-      return this.popBackStackState(this.mActivity.mHandler, var1, -1, var2);]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/app/FragmentTabHost.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[161]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[160-         var4.commit();
+161:         this.mFragmentManager.executePendingTransactions();
+162-      }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/view/ViewPager.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[968]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[967-   public boolean dispatchKeyEvent(KeyEvent var1) {
+968:      return super.dispatchKeyEvent(var1) || this.executeKeyEvent(var1);
+969-   }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/view/ViewPager.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[1061]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[1060-
+1061:   public boolean executeKeyEvent(KeyEvent var1) {
+1062-      if(var1.getAction() == 0) {]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/ModernAsyncTask.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[75]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[74-
+75:   public static void execute(Runnable var0) {
+76:      sDefaultExecutor.execute(var0);
+77-   }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/ModernAsyncTask.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[115]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[114-
+115:   public final ModernAsyncTask execute(Object ... var1) {
+116:      return this.executeOnExecutor(sDefaultExecutor, var1);
+117-   }
+118-
+119:   public final ModernAsyncTask executeOnExecutor(Executor var1, Object ... var2) {
+120-      if(this.mStatus != ModernAsyncTask.Status.PENDING) {]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/ModernAsyncTask.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[123]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[122-         case 1:
+123:            throw new IllegalStateException("Cannot execute task: the task is already running.");
+124-         case 2:
+125:            throw new IllegalStateException("Cannot execute task: the task has already been executed (a task can be executed only once)");
+126-         }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/ModernAsyncTask.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[132]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[131-      this.mWorker.mParams = var2;
+132:      var1.execute(this.mFuture);
+133-      return this;]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/LocalBroadcastManager.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[32]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[31-            case 1:
+32:               LocalBroadcastManager.this.executePendingBroadcasts();
+33-               return;]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/LocalBroadcastManager.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[41]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[40-
+41:   private void executePendingBroadcasts() {
+42-      // $FF: Couldn't be decompiled]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/LocalBroadcastManager.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[59]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[58-      if(this.sendBroadcast(var1)) {
+59:         this.executePendingBroadcasts();
+60-      }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/AsyncTaskLoader.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[64]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[63-         this.mCancellingTask = null;
+64:         this.executePendingTask();
+65-      }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/AsyncTaskLoader.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[111]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[110-
+111:   void executePendingTask() {
+112-      if(this.mCancellingTask == null && this.mTask != null) {]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/AsyncTaskLoader.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[119]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[118-         if(this.mUpdateThrottle <= 0L || SystemClock.uptimeMillis() >= this.mLastLoadCompleteTime + this.mUpdateThrottle) {
+119:            this.mTask.executeOnExecutor(ModernAsyncTask.THREAD_POOL_EXECUTOR, (Void[])null);
+120-            return;]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/AsyncTaskLoader.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[138]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[137-      this.mTask = new AsyncTaskLoader.LoadTask();
+138:      this.executePendingTask();
+139-   }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/AsyncTaskLoader.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[197]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[196-         this.waiting = false;
+197:         AsyncTaskLoader.this.executePendingTask();
+198-      }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/amazon/inapp/purchasing/KiwiPurchaseRequestCommandTask.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[60]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[59-         this.taskManager.enqueueAtFront(TaskPipelineId.FOREGROUND, new Task() {
+60:            public void execute() {
+61-               // $FF: Couldn't be decompiled]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/RequestBatch.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[70]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[69-
+70:   public final List executeAndWait() {
+71:      return this.executeAndWaitImpl();
+72-   }
+73-
+74:   List executeAndWaitImpl() {
+75:      return Request.executeBatchAndWait((RequestBatch)this);
+76-   }
+77-
+78:   public final RequestAsyncTask executeAsync() {
+79:      return this.executeAsyncImpl();
+80-   }
+81-
+82:   RequestAsyncTask executeAsyncImpl() {
+83:      return Request.executeBatchAsync((RequestBatch)this);
+84-   }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[218]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[217-
+218:   public static Response executeAndWait(Request var0) {
+219:      List var1 = executeBatchAndWait((Request[])(new Request[]{var0}));
+220-      if(var1 != null && var1.size() == 1) {]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[227]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[226-
+227:   public static List executeBatchAndWait(RequestBatch var0) {
+228-      Validate.notEmptyAndContainsNoNulls(var0, "requests");]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[239]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[238-
+239:      return executeConnectionAndWait(var3, (RequestBatch)var0);
+240-   }
+241-
+242:   public static List executeBatchAndWait(Collection var0) {
+243:      return executeBatchAndWait((RequestBatch)(new RequestBatch(var0)));
+244-   }
+245-
+246:   public static List executeBatchAndWait(Request ... var0) {
+247-      Validate.notNull(var0, "requests");
+248:      return executeBatchAndWait((Collection)Arrays.asList(var0));
+249-   }
+250-
+251:   public static RequestAsyncTask executeBatchAsync(RequestBatch var0) {
+252-      Validate.notEmptyAndContainsNoNulls(var0, "requests");
+253-      RequestAsyncTask var1 = new RequestAsyncTask(var0);
+254:      var1.executeOnSettingsExecutor();
+255-      return var1;]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[258]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[257-
+258:   public static RequestAsyncTask executeBatchAsync(Collection var0) {
+259:      return executeBatchAsync((RequestBatch)(new RequestBatch(var0)));
+260-   }
+261-
+262:   public static RequestAsyncTask executeBatchAsync(Request ... var0) {
+263-      Validate.notNull(var0, "requests");
+264:      return executeBatchAsync((Collection)Arrays.asList(var0));
+265-   }
+266-
+267:   public static List executeConnectionAndWait(HttpURLConnection var0, RequestBatch var1) {
+268-      List var2 = Response.fromHttpConnection(var0, var1);]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[296]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[295-
+296:   public static List executeConnectionAndWait(HttpURLConnection var0, Collection var1) {
+297:      return executeConnectionAndWait(var0, (RequestBatch)(new RequestBatch(var1)));
+298-   }
+299-
+300:   public static RequestAsyncTask executeConnectionAsync(Handler var0, HttpURLConnection var1, RequestBatch var2) {
+301-      Validate.notNull(var1, "connection");]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[304]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[303-      var2.setCallbackHandler(var0);
+304:      var3.executeOnSettingsExecutor();
+305-      return var3;]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[308]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[307-
+308:   public static RequestAsyncTask executeConnectionAsync(HttpURLConnection var0, RequestBatch var1) {
+309:      return executeConnectionAsync((Handler)null, var0, var1);
+310-   }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[313]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[312-   @Deprecated
+313:   public static RequestAsyncTask executeGraphPathRequestAsync(Session var0, String var1, Request.Callback var2) {
+314:      return newGraphPathRequest(var0, var1, var2).executeAsync();
+315-   }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[318]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[317-   @Deprecated
+318:   public static RequestAsyncTask executeMeRequestAsync(Session var0, Request.GraphUserCallback var1) {
+319:      return newMeRequest(var0, var1).executeAsync();
+320-   }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[323]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[322-   @Deprecated
+323:   public static RequestAsyncTask executeMyFriendsRequestAsync(Session var0, Request.GraphUserListCallback var1) {
+324:      return newMyFriendsRequest(var0, var1).executeAsync();
+325-   }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[328]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[327-   @Deprecated
+328:   public static RequestAsyncTask executePlacesSearchRequestAsync(Session var0, Location var1, int var2, int var3, String var4, Request.GraphPlaceListCallback var5) {
+329:      return newPlacesSearchRequest(var0, var1, var2, var3, var4, var5).executeAsync();
+330-   }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[333]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[332-   @Deprecated
+333:   public static RequestAsyncTask executePostRequestAsync(Session var0, String var1, GraphObject var2, Request.Callback var3) {
+334:      return newPostRequest(var0, var1, var2, var3).executeAsync();
+335-   }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[338]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[337-   @Deprecated
+338:   public static RequestAsyncTask executeRestRequestAsync(Session var0, String var1, Bundle var2, HttpMethod var3) {
+339:      return newRestRequest(var0, var1, var2, var3).executeAsync();
+340-   }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[343]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[342-   @Deprecated
+343:   public static RequestAsyncTask executeStatusUpdateRequestAsync(Session var0, String var1, Request.Callback var2) {
+344:      return newStatusUpdateRequest(var0, var1, var2).executeAsync();
+345-   }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[348]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[347-   @Deprecated
+348:   public static RequestAsyncTask executeUploadPhotoRequestAsync(Session var0, Bitmap var1, Request.Callback var2) {
+349:      return newUploadPhotoRequest(var0, (Bitmap)var1, var2).executeAsync();
+350-   }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[353]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[352-   @Deprecated
+353:   public static RequestAsyncTask executeUploadPhotoRequestAsync(Session var0, File var1, Request.Callback var2) throws FileNotFoundException {
+354:      return newUploadPhotoRequest(var0, (File)var1, var2).executeAsync();
+355-   }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[1022]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[1021-
+1022:   public final Response executeAndWait() {
+1023:      return executeAndWait(this);
+1024-   }
+1025-
+1026:   public final RequestAsyncTask executeAsync() {
+1027:      return executeBatchAsync((Request[])(new Request[]{this}));
+1028-   }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/AppEventsLogger.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[133]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[132-         while(var9.hasNext()) {
+133:            ((Request)var9.next()).executeAndWait();
+134-         }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/AppEventsLogger.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[175]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[174-   private static void flush(final AppEventsLogger.FlushReason var0) {
+175:      Settings.getExecutor().execute(new Runnable() {
+176-         public void run() {]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Settings.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[211]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[210-      final Context var3 = var0.getApplicationContext();
+211:      getExecutor().execute(new Runnable() {
+212-         public void run() {]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/RequestAsyncTask.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[21]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[20-   private static final String TAG = RequestAsyncTask.class.getCanonicalName();
+21:   private static Method executeOnExecutorMethod;
+22-   private final HttpURLConnection connection;]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/RequestAsyncTask.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[33]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[32-         Method var3 = var0[var2];
+33:         if("executeOnExecutor".equals(var3.getName())) {
+34-            Class[] var4 = var3.getParameterTypes();
+35-            if(var4.length == 2 && var4[0] == Executor.class && var4[1].isArray()) {
+36:               executeOnExecutorMethod = var3;
+37-               break;]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/RequestAsyncTask.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[72]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[71-         if(this.connection == null) {
+72:            return this.requests.executeAndWait();
+73-         } else {
+74:            List var3 = Request.executeConnectionAndWait(this.connection, (RequestBatch)this.requests);
+75-            return var3;]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/RequestAsyncTask.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[83]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[82-
+83:   RequestAsyncTask executeOnSettingsExecutor() {
+84-      try {
+85:         if(executeOnExecutorMethod != null) {
+86:            Method var4 = executeOnExecutorMethod;
+87-            Object[] var5 = new Object[]{Settings.getExecutor(), null};]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/RequestAsyncTask.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[97]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[96-
+97:      this.execute(new Void[0]);
+98-      return this;]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/GraphObjectPagingLoader.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[134]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[133-         public void run() {
+134:            Request.executeBatchAsync((RequestBatch)this.val$batch);
+135-         }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/GraphObjectPagingLoader.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[173]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[172-         this.loading = true;
+173:         Request.executeBatchAsync((RequestBatch)this.putRequestIntoBatch(this.currentRequest, this.skipRoundtripIfCached));
+174-      }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/UserSettingsFragment.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[67]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[66-            var2.setParameters(var3);
+67:            Request.executeBatchAsync((Request[])(new Request[]{var2}));
+68-            this.userInfoSession = var1;]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/LoginButton.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[125]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[124-            }
+125:         }).execute((Void[])null);
+126-      }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/LoginButton.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[141]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[140-            if(var1 != this.userInfoSession) {
+141:               Request.executeBatchAsync((Request[])(new Request[]{Request.newMeRequest(var1, new Request.GraphUserCallback() {
+142-                  public void onCompleted(GraphUser var1x, Response var2) {]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/internal/Utility.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[346]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[345-         var3.setParameters(var2);
+346:         GraphObject var4 = var3.executeAndWait().getGraphObject();
+347-         Utility.FetchedAppSettings var5 = new Utility.FetchedAppSettings(safeGetBooleanFromResponse(var4, "supports_attribution"), safeGetBooleanFromResponse(var4, "supports_implicit_sdk_logging"), safeGetStringFromResponse(var4, "gdpv4_nux_content"), safeGetBooleanFromResponse(var4, "gdpv4_nux_enabled"), null);]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/internal/WorkQueue.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[62]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[61-
+62:   private void execute(final WorkQueue.WorkNode var1) {
+63:      this.executor.execute(new Runnable() {
+64-         public void run() {]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/AuthorizationClient.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[445]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[444-         this.notifyBackgroundProcessingStart();
+445:         var2.executeAsync();
+446-      }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/AppLinkData.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[119]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[118-      final Context var3 = var0.getApplicationContext();
+119:      Settings.getExecutor().execute(new Runnable() {
+120-         public void run() {]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/TestSession.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[88]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[87-      Object[] var2 = new Object[]{testApplicationId};
+88:      Response var3 = (new Request((Session)null, String.format("%s/accounts/test-users", var2), var1, HttpMethod.POST)).executeAndWait();
+89-      FacebookRequestError var4 = var3.getError();]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/TestSession.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[132]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[131-      var3.putString("access_token", var2);
+132:      Response var4 = (new Request((Session)null, var1, var3, HttpMethod.DELETE)).executeAndWait();
+133-      FacebookRequestError var5 = var4.getError();]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/WebViewHelper.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[58]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[57-
+58:   public static void executeEmbeddedJavascript(String var0) {
+59-      if(mEmbeddedWebView != null) {]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/AdvertisingId.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[57]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[56-      if((advertisingInfo == null || !advertisingInfo.isValid()) && GameLib.mContext != null) {
+57:         executor.execute(new Runnable() {
+58-            public void run() {]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/SendEmbeddedMessageUIThread.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[21]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[20-      if(this.mEmbeddedWebView == null) {
+21:         GameLib.logWarning("FictionFactory", "Failed to execute javascript, no embedded webview present");
+22-      } else {]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/facebook/android/FacebookLib.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[471]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[470-               }
+471:            }).executeAsync();
+472-         }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/facebook/android/FacebookLib.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[502]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[501-                  }
+502:               })).executeAsync();
+503-            }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/facebook/FacebookLib.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[437]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[436-               }
+437:            }).executeAsync();
+438-         }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/facebook/FacebookLib.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[468]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[467-                  }
+468:               })).executeAsync();
+469-            }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/android/gms/common/images/ImageManager.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[231]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[230-         ParcelFileDescriptor var3 = (ParcelFileDescriptor)var2.getParcelable("com.google.android.gms.extra.fileDescriptor");
+231:         ImageManager.this.of.execute(ImageManager.this.new c(this.mUri, var3));
+232-      }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/android/gms/common/images/ImageManager.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[303]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[302-      public void run() {
+303:         ds.O("LoadBitmapFromDiskRunnable can\'t be executed in the main thread");
+304-         ParcelFileDescriptor var1 = this.om;]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/android/gms/internal/cm.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[29]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[28-   public final void start() {
+29:      cn.execute(this.ep);
+30-   }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/android/gms/internal/cn.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[25]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[24-
+25:   public static void execute(final Runnable var0) {
+26-      try {
+27:         iA.execute(new Runnable() {
+28-            public void run() {]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/ads/mediation/jsadapter/AdViewCheckTask.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[39]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[38-      if(this.r != null && !this.r.shouldStopAdCheck()) {
+39:         (new AdViewCheckTask.a(this.r.getWebViewWidth(), this.r.getWebViewHeight(), this.r.getWebView())).execute(new Void[0]);
+40-      }]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./bolts/BoltsExecutors.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[83]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[82-
+83:      public void execute(Runnable param1) {
+84-         // $FF: Couldn't be decompiled]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./bolts/AndroidExecutors.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[59]]></line_number>
+		<match><![CDATA[execute]]></match>
+		<name><![CDATA[execute]]></name>
+		<snippet><![CDATA[58-
+59:      public void execute(Runnable var1) {
+60-         (new Handler(Looper.getMainLooper())).post(var1);]]></snippet>
+		<group><![CDATA[db_access]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./bolts/AndroidExecutors.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[17]]></line_number>
+		<match><![CDATA[Runtime.getRuntime]]></match>
+		<name><![CDATA[Runtime.getRuntime]]></name>
+		<snippet><![CDATA[17:   private static final int CPU_COUNT = Runtime.getRuntime().availableProcessors();
+18-   private static final AndroidExecutors INSTANCE = new AndroidExecutors();]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/ModernAsyncTask.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[5]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[5:import android.os.Process;
+6-import android.util.Log;]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/ModernAsyncTask.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[53]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[52-            ModernAsyncTask.this.mTaskInvoked.set(true);
+53:            Process.setThreadPriority(10);
+54-            return ModernAsyncTask.this.postResult(ModernAsyncTask.this.doInBackground(this.mParams));]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/Loader.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[17]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[16-   Loader.OnLoadCompleteListener mListener;
+17:   boolean mProcessingChange = false;
+18-   boolean mReset = true;]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/Loader.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[32]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[31-   public void commitContentChanged() {
+32:      this.mProcessingChange = false;
+33-   }]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/Loader.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[55]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[54-      var3.println(this.mListener);
+55:      if(this.mStarted || this.mContentChanged || this.mProcessingChange) {
+56-         var3.print(var1);]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/Loader.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[61]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[60-         var3.print(this.mContentChanged);
+61:         var3.print(" mProcessingChange=");
+62:         var3.println(this.mProcessingChange);
+63-      }]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/Loader.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[137]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[136-      this.mContentChanged = false;
+137:      this.mProcessingChange = false;
+138-   }]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/Loader.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[141]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[140-   public void rollbackContentChanged() {
+141:      if(this.mProcessingChange) {
+142-         this.mContentChanged = true;]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./android/support/v4/content/Loader.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[162]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[161-      this.mContentChanged = false;
+162:      this.mProcessingChange |= var1;
+163-      return var1;]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/NativeAppCallAttachmentStore.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[25]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[24-
+25:   private void addAttachments(Context param1, UUID param2, Map param3, NativeAppCallAttachmentStore.ProcessAttachment param4) {
+26-      // $FF: Couldn't be decompiled]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/NativeAppCallAttachmentStore.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[51]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[50-      Validate.containsNoNullOrEmpty(var3.keySet(), "imageAttachmentFiles");
+51:      this.addAttachments(var1, var2, var3, new NativeAppCallAttachmentStore.ProcessAttachment() {
+52-         public void processAttachment(File param1, File param2) throws IOException {]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/NativeAppCallAttachmentStore.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[63]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[62-      Validate.containsNoNullOrEmpty(var3.keySet(), "imageAttachments");
+63:      this.addAttachments(var1, var2, var3, new NativeAppCallAttachmentStore.ProcessAttachment() {
+64-         public void processAttachment(Bitmap var1, File var2) throws IOException {]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/NativeAppCallAttachmentStore.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[133]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[132-
+133:   interface ProcessAttachment {
+134-]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/AuthorizationClient.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[76]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[75-   private transient AppEventsLogger appEventsLogger;
+76:   transient AuthorizationClient.BackgroundProcessingListener backgroundProcessingListener;
+77-   transient boolean checkedInternetPermission;]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/AuthorizationClient.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[203]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[202-
+203:   private void notifyBackgroundProcessingStart() {
+204:      if(this.backgroundProcessingListener != null) {
+205:         this.backgroundProcessingListener.onBackgroundProcessingStarted();
+206-      }]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/AuthorizationClient.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[210]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[209-
+210:   private void notifyBackgroundProcessingStop() {
+211:      if(this.backgroundProcessingListener != null) {
+212:         this.backgroundProcessingListener.onBackgroundProcessingStopped();
+213-      }]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/AuthorizationClient.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[344]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[343-
+344:   AuthorizationClient.BackgroundProcessingListener getBackgroundProcessingListener() {
+345:      return this.backgroundProcessingListener;
+346-   }]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/AuthorizationClient.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[371]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[370-
+371:   void setBackgroundProcessingListener(AuthorizationClient.BackgroundProcessingListener var1) {
+372:      this.backgroundProcessingListener = var1;
+373-   }]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/AuthorizationClient.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[444]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[443-         RequestBatch var2 = this.createReauthValidationBatch(var1);
+444:         this.notifyBackgroundProcessingStart();
+445-         var2.executeAsync();]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/AuthorizationClient.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[612]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[611-
+612:   interface BackgroundProcessingListener {
+613-
+614:      void onBackgroundProcessingStarted();
+615-
+616:      void onBackgroundProcessingStopped();
+617-   }]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/AuthorizationClient.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[643]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[642-         this.getTokenClient = null;
+643:         AuthorizationClient.this.notifyBackgroundProcessingStop();
+644-         if(var2 != null) {]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/AuthorizationClient.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[683]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[682-         } else {
+683:            AuthorizationClient.this.notifyBackgroundProcessingStart();
+684-            PlatformServiceClient.CompletedListener var2 = new PlatformServiceClient.CompletedListener() {]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/LoginActivity.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[68]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[67-      });
+68:      this.authorizationClient.setBackgroundProcessingListener(new AuthorizationClient.BackgroundProcessingListener() {
+69:         public void onBackgroundProcessingStarted() {
+70-            LoginActivity.this.findViewById(R.id.com_facebook_login_activity_progress_bar).setVisibility(0);
+71-         }
+72:         public void onBackgroundProcessingStopped() {
+73-            LoginActivity.this.findViewById(R.id.com_facebook_login_activity_progress_bar).setVisibility(8);]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/CrossKingAppConsumer.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[6]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[5-import android.net.Uri;
+6:import android.os.Process;
+7-import com.king.core.GameLib;]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/CrossKingAppConsumer.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[55]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[54-      GameLib.logInfo("CrossKingAppConsumer", "CrossKingAppConsumer FindKingProviderAutorities");
+55:      List var1 = this.mContext.getPackageManager().queryContentProviders(this.mContext.getPackageName(), Process.myUid(), 0);
+56-      if(var1 == null) {]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/king/core/Device.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[13]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[12-
+13:   private static final String PROCESSOR_TOKEN_NAME = "Processor";
+14-]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/android/gms/internal/cn.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[3]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[2-
+3:import android.os.Process;
+4-import com.google.android.gms.internal.ct;]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/android/gms/internal/cn.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[29]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[28-            public void run() {
+29:               Process.setThreadPriority(10);
+30-               var0.run();]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./bolts/AndroidExecutors.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[17]]></line_number>
+		<match><![CDATA[Process]]></match>
+		<name><![CDATA[Process]]></name>
+		<snippet><![CDATA[16-   static final int CORE_POOL_SIZE = 1 + CPU_COUNT;
+17:   private static final int CPU_COUNT = Runtime.getRuntime().availableProcessors();
+18-   private static final AndroidExecutors INSTANCE = new AndroidExecutors();]]></snippet>
+		<group><![CDATA[external_process]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/android/gms/wallet/NotifyTransactionStatusRequest.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[97]]></line_number>
+		<match><![CDATA[setStatus]]></match>
+		<name><![CDATA[setStatus]]></name>
+		<snippet><![CDATA[97:      public NotifyTransactionStatusRequest.Builder setStatus(int var1) {
+98-         NotifyTransactionStatusRequest.this.status = var1;]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/PlacePickerFragment.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[384]]></line_number>
+		<match><![CDATA[addHeader]]></match>
+		<name><![CDATA[addHeader]]></name>
+		<snippet><![CDATA[384:         var2.addHeaderView(this.getActivity().getLayoutInflater().inflate(R.layout.com_facebook_picker_search_box, var2, false), (Object)null, false);
+385-         this.searchBox = (EditText)var1.findViewById(R.id.com_facebook_picker_search_text);]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/model/GraphObject.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[256]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[256:                  int var6 = var4.getParameterTypes().length;
+257-                  Class var7 = var4.getReturnType();]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/model/GraphObject.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[457]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[456-         String var3 = var1.getName();
+457:         int var4 = var1.getParameterTypes().length;
+458-         PropertyName var5 = (PropertyName)var1.getAnnotation(PropertyName.class);]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/Request.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[1058]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[1057-
+1058:   public final Bundle getParameters() {
+1059-      return this.parameters;]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/AppEventsLogger.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[146]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[145-      final Request var6 = Request.newPostRequest((Session)null, String.format("%s/activities", new Object[]{var4}), (GraphObject)null, (Request.Callback)null);
+146:      Bundle var7 = var6.getParameters();
+147-      if(var7 == null) {]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/AppEventsLogger.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[729]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[728-         var1.setGraphObject(var6);
+729:         Bundle var7 = var1.getParameters();
+730-         if(var7 == null) {]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/RequestAsyncTask.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[34]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[33-         if("executeOnExecutor".equals(var3.getName())) {
+34:            Class[] var4 = var3.getParameterTypes();
+35-            if(var4.length == 2 && var4[0] == Executor.class && var4[1].isArray()) {]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/WebDialog.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[329]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[328-
+329:      protected Bundle getParameters() {
+330-         return this.parameters;]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/WebDialog.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[479]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[478-      public WebDialog.FeedDialogBuilder setCaption(String var1) {
+479:         this.getParameters().putString("caption", var1);
+480-         return this;]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/WebDialog.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[484]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[483-      public WebDialog.FeedDialogBuilder setDescription(String var1) {
+484:         this.getParameters().putString("description", var1);
+485-         return this;]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/WebDialog.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[489]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[488-      public WebDialog.FeedDialogBuilder setFrom(String var1) {
+489:         this.getParameters().putString("from", var1);
+490-         return this;]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/WebDialog.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[494]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[493-      public WebDialog.FeedDialogBuilder setLink(String var1) {
+494:         this.getParameters().putString("link", var1);
+495-         return this;]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/WebDialog.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[499]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[498-      public WebDialog.FeedDialogBuilder setName(String var1) {
+499:         this.getParameters().putString("name", var1);
+500-         return this;]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/WebDialog.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[504]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[503-      public WebDialog.FeedDialogBuilder setPicture(String var1) {
+504:         this.getParameters().putString("picture", var1);
+505-         return this;]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/WebDialog.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[509]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[508-      public WebDialog.FeedDialogBuilder setSource(String var1) {
+509:         this.getParameters().putString("source", var1);
+510-         return this;]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/WebDialog.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[514]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[513-      public WebDialog.FeedDialogBuilder setTo(String var1) {
+514:         this.getParameters().putString("to", var1);
+515-         return this;]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/WebDialog.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[550]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[549-      public WebDialog.RequestsDialogBuilder setData(String var1) {
+550:         this.getParameters().putString("data", var1);
+551-         return this;]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/WebDialog.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[555]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[554-      public WebDialog.RequestsDialogBuilder setMessage(String var1) {
+555:         this.getParameters().putString("message", var1);
+556-         return this;]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/WebDialog.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[560]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[559-      public WebDialog.RequestsDialogBuilder setTitle(String var1) {
+560:         this.getParameters().putString("title", var1);
+561-         return this;]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/WebDialog.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[565]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[564-      public WebDialog.RequestsDialogBuilder setTo(String var1) {
+565:         this.getParameters().putString("to", var1);
+566-         return this;]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/PlacePickerFragment.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[84]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[83-
+84:      Bundle var11 = var7.getParameters();
+85-      var11.putString("fields", TextUtils.join(",", var8));]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/widget/FriendPickerFragment.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[57]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[56-
+57:      Bundle var8 = var4.getParameters();
+58-      var8.putString("fields", TextUtils.join(",", var5));]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/facebook/AuthorizationClient.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[462]]></line_number>
+		<match><![CDATA[getParameter]]></match>
+		<name><![CDATA[getParameter]]></name>
+		<snippet><![CDATA[461-      public WebDialog build() {
+462:         Bundle var1 = this.getParameters();
+463-         var1.putString("redirect_uri", "fbconnect://success");]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/android/gms/internal/ai.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[59]]></line_number>
+		<match><![CDATA[getHeader]]></match>
+		<name><![CDATA[getHeader]]></name>
+		<snippet><![CDATA[59:      this.fj = var1.getHeaderTextColor();
+60:      this.fk = var1.getHeaderTextSize();
+61-      this.fl = var1.getQuery();]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/android/gms/ads/search/SearchAdRequest.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[107]]></line_number>
+		<match><![CDATA[getHeader]]></match>
+		<name><![CDATA[getHeader]]></name>
+		<snippet><![CDATA[106-
+107:   public int getHeaderTextColor() {
+108-      return this.ju;]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/android/gms/ads/search/SearchAdRequest.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[111]]></line_number>
+		<match><![CDATA[getHeader]]></match>
+		<name><![CDATA[getHeader]]></name>
+		<snippet><![CDATA[110-
+111:   public int getHeaderTextSize() {
+112-      return this.jv;]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./bolts/WebViewAppLinkResolver.java]]></file>
+		<file_type><![CDATA[java]]></file_type>
+		<line_number><![CDATA[207]]></line_number>
+		<match><![CDATA[getHeader]]></match>
+		<name><![CDATA[getHeader]]></name>
+		<snippet><![CDATA[206-                  if(var4.getResponseCode() >= 300 && var4.getResponseCode() < 400) {
+207:                     var1x = new URL(var4.getHeaderField("Location"));
+208-                     var4.disconnect();]]></snippet>
+		<group><![CDATA[HTTP_request]]></group>
+	</poi>
+	<poi>
+		<file><![CDATA[./com/google/android/gms/internal/ce.java]]></file>
+		<file_type><![CDATA[sql]]></file_type>
+		<line_number><![CDATA[67]]></line_number>
+		<match><![CDATA[<script]]></match>
+		<name><![CDATA[<script]]></name>
+		<snippet><![CDATA[67:                  var1.loadDataWithBaseURL("http://googleads.g.doubleclick.net", "<!DOCTYPE html><html><head><script src=\"http://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.js\"></script><script>AFMA_buildAdURL(" + var5 + ");</script></head><body></body></html>", "text/html", "UTF-8", (String)null);
+68-               }]]></snippet>
+		<group><![CDATA[markup_injections]]></group>
+	</poi>
+</points_of_interest>
+

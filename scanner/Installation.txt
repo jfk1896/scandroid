@@ -1,0 +1,95 @@
+//Scanning installation
+
+// 1. Update Ubuntu
+
+#sudo apt-get update
+#sudo apt-get upgrade
+
+// 2. Java
+
+#sudo apt-get install openjdk-7-jdk
+
+// 3. Apache Ant
+
+#sudo apt-get install ant
+
+// 4. Dex-2-jar
+
+unzip -d ~/dex2jar/ dex2jar-0.0.9.15.zip
+
+// 5. JD-CMD
+
+unzip -d ~/jd-cmd/ jd-cmd-master.zip
+
+#sudo apt-get install maven
+cd ~/jd-cmd
+mvn clean package
+
+// 6. Watchtower
+
+unzip -d ~/watchtower/ watchtower-master.zip
+
+#sudo apt-get install ruby
+#sudo gem install backports
+#sudo gem install trollop
+#sudo gem install rake
+change watchtower/config.rg and comment out irrelevent signatures 
+
+// 7. Required working directories
+
+mkdir ~/uploads
+mkdir ~/tempin
+mkdir ~/tempout
+
+
+// 8. APKParser
+
+unzip APKParser.zip
+
+// 9. Json forPHP for VTscan 
+
+#sudo apt-get install php5-json
+
+// 10. Simple Json for Python for VTscan 
+
+#sudo apt-get install python-simplejson
+
+// 11. Xampp
+
+sudo add-apt-repository ppa:upubuntu-com/xampp
+sudo apt-get update
+sudo apt-get install xampp
+
+// 12. mySql / Python
+
+#sudo apt-get install idle
+#sudo apt-get install libmysqlclient-dev
+#sudo apt-get install libmysqlclient-dev python-dev
+#sudo apt-get install python-mysqldb
+#sudo apt-get install mysql-client-5.6
+
+
+** check directory permissions for scanner to operate ** chmod 755
+use password on database and change /opt/lampp/phpmyadmin/config.inc.php accordingly
+
+** ~ opt/scanner
+
+** check permissions for least priveleges
+remove read permissions on directories for other users
+
+Install/maintain database via SSH:
+mysql -u root -h 127.0.0.1 -p
+password: project()bn311
+
+CREATE SCHEMA scandroid;
+
+Import database:
+mysql -h 127.0.0.1 -p -u root scandroid < scandroid.backup.sql
+
+INSERT INTO `files`(`fileHash`, `fileName`, `scanned`, `error`) VALUES ('','','0','0');
+UPDATE `files` SET `scanned`='0', `error`='0' WHERE `fileHash` = '';
+
+Export database:
+mysqldump --opt -h 127.0.0.1 -u root -p scandroid > scandroid.backup.sql
+
+update files set package = '' where fileHash = '';

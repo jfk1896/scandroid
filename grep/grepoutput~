@@ -1,0 +1,92 @@
+#!/bin/sh
+#Grepping of information from output xml to output html
+package=$(cat package.txt | head -n1)
+version=$(cat package.txt | tail -n1)
+echo "<!DOCTYPE html>" > greppedoutput.html
+echo "<html>" >> greppedoutput.html
+echo "<head>"  >> greppedoutput.html
+
+echo "<style> div#databox { padding:12px; background: #F3F3F3; border:#CCC 1px solid; width:550px;height:310px; }</style> " >> greppedoutput.html
+
+echo  "<title>Scan Report</title>" >> greppedoutput.html
+echo "</head>"  >> greppedoutput.html
+echo "<body>" >> greppedoutput.html
+echo "<h2>Scan Report for $package v$version</h2>" >> greppedoutput.html
+
+
+
+echo "<div id="databox">"
+#Counting total file_access group entries
+file=$(grep file_access output.xml | wc -l)
+echo "<h3>File Access Detections: $file</h3>" >> greppedoutput.html
+#Counting individual file_access entries
+fis=$(grep 'new FileInputStream' output.xml | grep match| wc -l)
+echo "<p>new FileInputStream : $fis<br>" >> greppedoutput.html
+fos=$(grep 'new FileOutputStream' output.xml | grep match |  wc -l)
+echo "new FileOutputStream : $fos<br>" >> greppedoutput.html
+fr=$(grep 'new FileReader' output.xml | grep match | wc -l)
+echo "new FileReader : $fr<br>" >> greppedoutput.html
+fw=$(grep 'new FileWriter' output.xml | grep match | wc -l)
+echo "new FileWriter : $fw<br>" >> greppedoutput.html
+f=$(grep 'new File]' output.xml | grep match | wc -l)
+echo "new File : $f</p>" >> greppedoutput.html
+echo "</div>"
+
+
+#Counting total db_access group entries
+db=$(grep db_access output.xml | wc -l)
+echo "<h3>Database Access Detections: $db</h3>" >> greppedoutput.html
+#Counting individual db_access entries
+cs=$(grep 'createStatement' output.xml | grep match| wc -l)
+echo "<p>createStatement : $cs<br>" >> greppedoutput.html
+e=$(grep 'execute' output.xml | grep match |  wc -l)
+echo "execute : $e<br>" >> greppedoutput.html
+eq=$(grep 'executeQuery' output.xml | grep match | wc -l)
+echo "executeQuery : $eq<br>" >> greppedoutput.html
+sex=$(grep 'Statement.execute' output.xml | grep match | wc -l)
+echo "Statement.execute : $sex<br>" >> greppedoutput.html
+seq=$(grep 'Statement.executeQuery' output.xml | grep match | wc -l)
+echo "Statement.executeQuery : $seq</p>" >> greppedoutput.html
+
+#Counting total external_process group entries
+ext=$(grep external_process output.xml | wc -l)
+echo "<h3>External Process Detections: $ext</h3>" >> greppedoutput.html
+#Counting individual external_process entries
+rgr=$(grep 'Runtime.getRuntime' output.xml | grep match| wc -l)
+echo "<p>Runtime.getRuntime : $rgr<br>" >> greppedoutput.html
+re=$(grep 'Runtime.Exec' output.xml | grep match |  wc -l)
+echo "Runtime.Exec : $re<br>" >> greppedoutput.html
+p=$(grep 'Process' output.xml | grep match | wc -l)
+echo "Process : $p</p>" >> greppedoutput.html
+
+#Counting total HTTP_request group entries
+http=$(grep HTTP_request output.xml | wc -l)
+echo "<h3>HTTP Request Detections: $http</h3>" >> greppedoutput.html
+#Counting individual HTTP_request entries
+sr=$(grep 'sendRedirect' output.xml | grep match| wc -l)
+echo "<p>sendRedirect : $sr<br>" >> greppedoutput.html
+ss=$(grep 'setStatus' output.xml | grep match |  wc -l)
+echo "setStatus :  $ss<br>" >> greppedoutput.html
+ah=$(grep 'addHeader' output.xml | grep match | wc -l)
+echo "addHeader :  $ah<br>" >> greppedoutput.html
+gp=$(grep 'getParameter' output.xml | grep match | wc -l)
+echo "getParameter : $gp<br>" >> greppedoutput.html
+gh=$(grep 'getHeader' output.xml | grep match | wc -l)
+echo "getHeader : $gh</p>" >> greppedoutput.html
+
+#Counting total Crypto_and_Keystore group entries
+crypto=$(grep Crypto_and_Keystore output.xml | wc -l)
+echo "<h3>Crypto and Keystore Detections: $crypto</h3>" >> greppedoutput.html
+#Counting individual Crypto_and_Keystore entries
+ks=$(grep 'KeyStore' output.xml | grep match| wc -l)
+echo "<p>KeyStore : $ks<br>" >> greppedoutput.html
+pk=$(grep 'PrivateKey' output.xml | grep match |  wc -l)
+echo "PrivateKey : $pk<br>" >> greppedoutput.html
+st=$(grep 'SamlAuthToken' output.xml | grep match | wc -l)
+echo "SamlAuthToken : $st</p>" >> greppedoutput.html
+
+echo "<h2>Glossary of Detections</h2>" >> greppedoutput.html
+
+echo "</body>" >> greppedoutput.html
+echo "</html>" >> greppedoutput.html
+

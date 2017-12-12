@@ -1,0 +1,211 @@
+#!/usr/bin/env ruby
+#######################################################################
+# Watchtower - a Static Code Analysis tool for security auditors
+#
+# Chris Lane
+# chris@chris-allen-lane.com
+# http://chris-allen-lane.com
+# http://twitter.com/chrisallenlane
+#######################################################################
+
+
+# try to patch in support for old ruby
+is_ruby_18 = (RUBY_VERSION[0,3] === '1.8')
+
+require 'rubygems'
+require 'backports'
+require 'csv' unless is_ruby_18
+require 'digest'
+require 'erb'
+require 'fastercsv' if is_ruby_18
+require 'fileutils'
+require 'iconv'
+require 'open-uri'
+require 'trollop'
+require 'uri'
+require_relative 'lib/models/poi'
+require_relative 'lib/models/signature'
+require_relative 'lib/models/vulnscanner'
+
+
+#######################################################################
+# Menu options and program flow
+#######################################################################
+opts = Trollop::options do
+	banner File.read('./lib/static/banner.txt')
+	
+	version 'Version: 1.4.8'
+
+	opt :scan,		    'The target to scan (may be a path on the local filesystem or a URL on the web)',
+			:type 		=> :string,
+			:required	=> true,
+			:short 		=> 's'
+
+	opt :colorize,		'Colorizes command-line output',
+			:short 		=> 'c'
+
+	opt :config_file,	'Path to the config file.',
+			:type 		=> :string,
+			:default	=> './config.rb',
+			:short 		=> 'f'
+
+	opt :output_format,	'Specify the output format. Valid options are "csv", ' + 
+			'"html", "markdown", "txt", and "xml"',
+			:default	=> 'txt',
+			:short 		=> 'o'
+			
+	opt :project_name, 'The name of the project (useful when outputting an HTML report)',
+			:type 		=> :string,
+			:short 		=> 'p'
+			
+	opt :before_context, 'print NUM lines of leading context',
+			:type 		=> :int,
+			:required	=> false,
+			:default	=> 1,
+			:short		=> 'B'
+
+	opt :after_context, 'print NUM lines of trailing context',
+			:type 		=> :int,
+			:required	=> false,
+			:default	=> 1,
+			:short		=> 'A'
+
+	opt :context, 'print NUM lines of output context',
+			:type 		=> :int,
+			:required	=> false,
+			:default	=> 10,
+			:short		=> 'C'
+end
+	
+
+#######################################################################
+# Configs, Signatures, and Option Validation
+#######################################################################
+# Load the configuration file
+unless File.exists? opts[:config_file]
+	warn 'The specified config file does not exist.'
+	exit
+end
+require opts[:config_file]
+
+# Verify that -A and -B are >= 1
+if (opts[:before_context] < 1) or (opts[:after_context] < 1)
+    warn 'Options --before-context and --after-context may not be less than 1.'
+    exit
+end
+
+# Verify that -C is >= 3
+if opts[:context] < 3
+    warn 'Option --context may not be less than 3.'
+    exit
+end
+
+
+#######################################################################
+# Remote URL scanning
+#######################################################################
+# determine whether a filesystem or URL scan target was specified
+unless File.directory? opts[:scan]
+    begin    
+        # simply verify that the specified URL is valid so we can fail
+        # gracefully if not
+        res = open(opts[:scan]).read
+        # kludge: I don't know if it's bad form to output a notice to 
+        # stderr when there isn't actually a problem
+        warn "Downloading the page source for #{opts[:scan]}. This may take some time."
+        
+        # parse the domain out of the URL, because that's the name wget
+        # is going to choose for its output directory
+        $configs[:domain] = URI::split(opts[:scan])[2]
+        
+        # don't accidentally nuke any existing files
+        if File.exists? "/tmp/#{$configs[:domain]}"
+            warn "The directory '#{opts[:scan]}' already exists. Please " +
+                 "rename that directory to avoid a naming collision."
+            exit
+        end
+        `cd /tmp/; wget -mq '#{opts[:scan]}'`
+        
+        # when the download is complete, specify the downloaded 
+        # directory for scanning
+        opts[:scan] = "/tmp/#{$configs[:domain]}"
+        
+        # make a note to clean up after wget when the scan is complete
+        $configs[:clean_up_after_wget] = true
+    rescue
+        warn 'The path or URL specified for scanning appears to be invalid.'
+        exit
+    end
+end
+
+
+#######################################################################
+# Scan
+#######################################################################
+vulnscanner = VulnScanner.new({
+	:signatures		=> $signatures,
+	:scan_dir		=> opts[:scan],
+	:before_context	=> opts[:before_context],
+	:after_context	=> opts[:after_context],
+	:context    	=> (opts[:context_given]) ? opts[:context] : false,
+})
+vulnscanner.scan
+
+# if no matches at all were detected, notify and exit
+if vulnscanner.points_of_interest.count.zero?
+    warn "No signature matches were found within the project. Terminating."
+    exit
+end
+
+# clean up after wget if necessary
+`rm -rf '/tmp/#{$configs[:domain]}'` if $configs[:clean_up_after_wget].eql? true
+
+
+#######################################################################
+# Display
+#######################################################################
+# output in the requested format
+case opts[:output_format]
+	when 'csv'
+		# print a header row
+		puts '"file_type","file","line_number","match","name","snippet","group"'
+        vulnscanner.points_of_interest.each do |point|
+            puts CSV.generate_line(point.to_a, { :force_quotes => true }).gsub("\r", '').gsub("\n", '') + "\n" unless is_ruby_18
+            puts FasterCSV.generate_line(point.to_a, { :force_quotes => true }).gsub("\r", '').gsub("\n", '') + "\n" if is_ruby_18
+        end
+		
+	when 'html'
+		# require erb for templating
+		include ERB::Util
+		
+		# sort the points of interest for HTML output
+		vulnscanner.sort
+		
+		# parse and display the HTML output
+		erb = ERB.new(File.read($configs[:report_file][:html]), 0, '<>', 'buffer')
+		puts erb.result(binding)
+		
+	when 'markdown'
+		# require erb for templating
+		include ERB::Util
+		
+		# sort the points of interest for HTML output
+		vulnscanner.sort
+		
+		# parse and display the HTML output
+		erb = ERB.new(File.read($configs[:report_file][:markdown]), 0, '<>', 'buffer')
+		puts erb.result(binding)
+	
+	when 'xml'
+		puts '<points_of_interest>'
+		vulnscanner.points_of_interest.each {|point| puts point.to_xml}
+		puts '</points_of_interest>'
+	
+	else
+		if opts[:colorize_given]
+			require 'colorize'
+			vulnscanner.points_of_interest.each {|point| point.colorize; puts point + "\n\n"}
+		else
+			vulnscanner.points_of_interest.each {|point| puts point + "\n\n"}
+		end
+end
